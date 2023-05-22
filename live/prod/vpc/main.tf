@@ -19,4 +19,5 @@ module "route_table" {
   source               = "../../../modules/VPC"
   vpc_id               = module.vpc.vpc_id
   public_subnet_id     = module.subnets.public_subnet
+  availability_zones   = var.availability_zones
 }
